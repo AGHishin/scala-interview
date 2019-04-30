@@ -1,12 +1,43 @@
 
 1) Explain REST and RESTful
 
+REST is an architectural style that describes best
+practices to expose web services over HTTP
+RESTful describes using that paradigm: the Web services that conform to this architectural style are called RESTful Web Service
+
+
 2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
 
 3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
 
+The GET method should only be used to retrieve data.
+The POST method is used to send an entity to the specified resource. example form
+The PUT method replaces all current representations of the targeted resource with the contents of the query.
+The PATCH method is used to apply partial changes to a resource.
+the DELETE method Deletes all current representations of the target resource given by a URI.
+
+
+
 4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+
+1-with the protocol stateless, the information of a transaction are not conserved after are treatment. In the protocol stateful they are conserved
+2- A stateless server does not keep state between connections. So, When you send a request to a stateless server, it does not create any objects that track information regarding your requests.
+A stateful server keeps state of connections.
+3- Stateless protocols are lightweight because the servers that use them do not retain any information.
+Stateful protocols are heavy.
+
+HTTP is stateless
+
 
 5) Explain the difference between a GET and a POST (like how are sent the parameters)
 
+-get the data is sent in the header, on Post the data is sent in the body. which means that the data that can be sent with the GET method is limited.
+-The GET request is not secure because the data is exposed in the URL bar. the Post Query data is not exposed in the URL bar.
+-The data retrieved with Get Can be to cache. which is not the case for Post
+
+
 6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+
+1-Debug: go step by step through my solution to try to find where there is error.
+2-Look at the problem from another point of view. Would another approach be more relevant?
+3-Search: search on Google. if someone has already solved the problem I had because we learn from each other.
