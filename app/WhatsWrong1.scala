@@ -5,7 +5,7 @@ object WhatsWrong1 {
   trait Interface {
     val city: String
    
-   val support: String = s"Ici c'est $city !"
+   //val support: String = s"Ici c'est $city !"
    //solution to fix
    lazy val support: String = s"Ici c'est $city !"
   }
