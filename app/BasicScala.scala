@@ -37,10 +37,8 @@ object BasicScala {
   
   val mail = new Regex("^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$")
   
-     if (mail.findFirstIn(maybeEmail) == None){
-       false 
-       }else 
-         true
+     return !(mail.findFirstIn(maybeEmail) == None)
+       
   
   }
 
